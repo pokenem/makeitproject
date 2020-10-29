@@ -14,8 +14,8 @@ void loop()
 {
   for (int i = 0; i < NUM_LEDS; i++ ) 
   {   
-    Serial.read(int r,int g,int b);                 
-    leds[i] = CHSV(r,g,b);              
+    Serial.read(int g,int r,int b);                 
+    leds[i] = CHSV(g,r,b);              
   }       
   FastLED.show();
   delay(5);       
